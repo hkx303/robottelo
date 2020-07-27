@@ -63,7 +63,7 @@ def form_data():
 def test_positive_deploy_configure_by_id(session, form_data):
     """ Verify configure created and deployed with id.
 
-    :id: 6bec0263-7b40-4f2d-8fa2-042d6f8547c6
+    :id: c5385f69-aa7e-4fc0-b126-08aacb14bfb8
 
     :expectedresults:
         1. Config can be created and deployed by command
@@ -101,7 +101,7 @@ def test_positive_deploy_configure_by_id(session, form_data):
 def test_positive_deploy_configure_by_script(session, form_data):
     """ Verify configure created and deployed with script.
 
-    :id: 557ac66f-6be0-4a62-8f7e-1812399991ff
+    :id: cae3671c-a583-4e67-a0de-95d191d2174c
 
     :expectedresults:
         1. Config can be created and deployed by script
@@ -139,7 +139,7 @@ def test_positive_deploy_configure_by_script(session, form_data):
 def test_positive_debug_option(session, form_data):
     """ Verify debug checkbox and the value changes of VIRTWHO_DEBUG
 
-    :id: 9edf8cb5-dda6-4e65-bbf7-6a1b440c73b2
+    :id: d6f9940f-c003-4099-97bf-4d8820ab710e
 
     :expectedresults:
         1. if debug is checked, VIRTWHO_DEBUG=1 in /etc/sysconfig/virt-who
@@ -170,7 +170,7 @@ def test_positive_debug_option(session, form_data):
 def test_positive_interval_option(session, form_data):
     """ Verify interval dropdown options and the value changes of VIRTWHO_INTERVAL.
 
-    :id: 2e0f69ad-c3ac-4542-8977-070c7271d2f6
+    :id: 412a01eb-ae9c-4b23-aeb5-2595873b27e2
 
     :expectedresults:
         VIRTWHO_INTERVAL can be changed in /etc/sysconfig/virt-who if the
@@ -210,7 +210,7 @@ def test_positive_interval_option(session, form_data):
 def test_positive_hypervisor_id_option(session, form_data):
     """ Verify Hypervisor ID dropdown options.
 
-    :id: 47fef84d-2a65-4fa4-98e7-be59e5a6ffae
+    :id: dd490f5f-8371-4be6-81d5-a02bbff43de8
 
     :expectedresults:
         hypervisor_id can be changed in virt-who-config-{}.conf if the
@@ -244,7 +244,7 @@ def test_positive_hypervisor_id_option(session, form_data):
 def test_positive_filtering_option(session, form_data):
     """ Verify Filtering dropdown options.
 
-    :id: edd5872a-e4aa-478e-a18c-6d216a676cb7
+    :id: 107c5644-cbf4-48b6-8975-718b661177b0
 
     :expectedresults:
         1. if filtering is selected to Whitelist, 'Filter hosts' can be set.
@@ -298,7 +298,7 @@ def test_positive_filtering_option(session, form_data):
 def test_positive_proxy_option(session, form_data):
     """ Verify 'HTTP Proxy' and 'Ignore Proxy' options.
 
-    :id: ffbc7b6b-7a07-4c2e-8c22-07279400059f
+    :id: 59b70a9e-59b1-494c-8668-d824ace8efbf
 
     :expectedresults:
         http_proxy ad NO_PROXY will be setting in /etc/sysconfig/virt-who.
@@ -330,7 +330,7 @@ def test_positive_proxy_option(session, form_data):
 def test_positive_virtwho_roles(session):
     """ Verify the default roles for virtwho configure
 
-    :id: c8f483f2-23da-449d-b55e-2644d97011de
+    :id: 69e30452-a655-45e3-9651-a32bf229f284
 
     :expectedresults:
         'Virt-who Manager', 'Virt-who Reporter', 'Virt-who Viewer' existing
@@ -366,7 +366,7 @@ def test_positive_virtwho_roles(session):
 def test_positive_virtwho_configs_widget(session, form_data):
     """Check if Virt-who Configurations Status Widget is working in the Dashboard UI
 
-    :id: e8db62fd-f4b7-4798-bb87-3d0fa7401daf
+    :id: 6bed6d55-2bd5-4438-9f72-d48e78566789
 
     :Steps:
 
@@ -420,7 +420,7 @@ def test_positive_virtwho_configs_widget(session, form_data):
 def test_positive_delete_configure(session, form_data):
     """Verify when a config is deleted the associated user is deleted.
 
-    :id: 4a6fd0da-9a3b-4de1-bd4f-8dbf91840976
+    :id: 9fdee7f2-833c-47e0-9d58-cd0c9fdd15fe
 
     :steps:
         1. Create a virt-who configuration and deploy it to a
@@ -450,7 +450,7 @@ def test_positive_delete_configure(session, form_data):
 def test_positive_virtwho_reporter_role(session, test_name, form_data):
     """Verify the virt-who reporter role can TRULY work.
 
-    :id: 7c9a9c61-dee9-41f4-aaa4-4ef4fd17fd4d
+    :id: 4bef3b31-89d2-4502-b971-2437b920a3ff
 
     :expectedresults:
         Virt-who Reporter Role granting minimal set of permissions for virt-who
@@ -503,7 +503,7 @@ def test_positive_virtwho_reporter_role(session, test_name, form_data):
 def test_positive_virtwho_viewer_role(session, test_name, form_data):
     """Verify the virt-who viewer role can TRULY work.
 
-    :id: c4dd0891-8c90-4801-a1a0-7c0eff916e1d
+    :id: 9cdd3bbe-cfb2-4297-92fb-110515f835b3
 
     :expectedresults:
         Virt-who Viewer Role granting permissions to see all configurations
@@ -560,7 +560,7 @@ def test_positive_virtwho_viewer_role(session, test_name, form_data):
 def test_positive_virtwho_manager_role(session, test_name, form_data):
     """Verify the virt-who manager role can TRULY work.
 
-    :id: 716b775c-1e0e-4c1d-8041-08a84e031d74
+    :id: a4cda8d1-36ae-4925-9477-ceb5cef4af9a
 
     :expectedresults:
         Virt-who Manager Role granting all permissions to manage virt-who configurations,
@@ -617,7 +617,7 @@ def test_positive_virtwho_manager_role(session, test_name, form_data):
 def test_positive_overview_label_name(form_data, session):
     """Verify the label name on virt-who config Overview Page.
 
-    :id: b463a207-c7ed-4a0d-a0ca-9660ea895ce4
+    :id: 68422042-648c-4652-a52b-5bf42462d2ae
 
     :BZ: 1649928
 
@@ -679,7 +679,7 @@ def test_positive_overview_label_name(form_data, session):
 def test_positive_last_checkin_status(form_data, session):
     """Verify the Last Checkin status on Content Hosts Page.
 
-    :id: d86546dc-07a0-4d52-b687-01d94623b09b
+    :id: 3931e10e-8adc-4ca4-8963-20572b2f99bf
 
     :expectedresults: The Last Checkin time on Content Hosts Page is client date time
 
