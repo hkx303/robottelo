@@ -330,6 +330,8 @@ class TestVirtWhoConfigforEsx:
         :CaseLevel: Integration
 
         :CaseImportance: Medium
+
+        :BZ: 1902199
         """
         command = get_configure_command(virtwho_config.id)
         deploy_configure_by_command(command, form_data['hypervisor_type'])
